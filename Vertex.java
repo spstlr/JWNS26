@@ -1,32 +1,31 @@
-package JWNS26 ;
-class vertex{
- public double x;
- public double y;
- public vertex(double x,double y) {
-    this.x=x;
-    this.y=y;
+package JWNS26;
 
- }
-public static void main(String[]args){
-    Vertex v1 = new Vertex (42, 17);
-    Vertex v2 = new Vertex (2.3, 6.3);
-    System.out.println (v1) ;
- 
+class Vertex {
+  public double x;
+  public double y;
 
-    for(int i=0;i<10;i++){
-    
-        v1.x=v2.x+v1.x;
-       
-        v1.y=v1.y+v2.y;
-        System.out.println(v1 );
-    
-    }
-    while(v1.)
+  public Vertex(double x, double y) {
+    this.x = x;
+    this.y = y;
+
+  }
+
+  public static void main(String[] args) {
+    Vertex v1 = new Vertex(42, 17);
+    Vertex v2 = new Vertex(0.3, 24.6);
+  
+    System.out.println(v1);
+    System.out.println(v1.length());
+
+  }
+
+  public double length(){
+    return Math.sqrt(x*x+y*y);
+
 }
 
+  public String toString() {
+    return "(" + x + "," + y + ")";
+  }
 
-
-public string tostring(){
-return "("+x+","+y+")";
-}
 }
