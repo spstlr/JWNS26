@@ -10,7 +10,7 @@ class Vertex {
 
 
   }
-
+//
   public static void main(String[] args) {
     Vertex v1 = new Vertex(42, 17);
     Vertex v2 = new Vertex(0.3, 24.6);
