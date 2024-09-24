@@ -63,9 +63,18 @@ class Vertex {
   public Vertex sub(Vertex v2){
     return new Vertex(x-v2.x, y-v2.y);
   }
-  public Vertex distance(Vertex that){
+
+  public double distance(Vertex that){
     double x_dif= that.x- this.x;
     double y_dif= that.y- this.y;
     return Math.sqrt(x_dif*x_dif+y_dif*y_dif);
   }
+  public void normalize() {
+    double factor = this.length();
+    x = x / factor;
+    y = y / factor;
+
+  }
+
+  
 }
