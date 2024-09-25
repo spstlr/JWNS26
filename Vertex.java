@@ -1,4 +1,4 @@
-package JWNS26;
+//package JWNS26;
 
 class Vertex {
   public double x;
@@ -14,7 +14,11 @@ class Vertex {
     Vertex v1 = new Vertex(42, 17);
     Vertex v2 = new Vertex(0.3, 24.6);
     Vertex v3 = v1.skalarMult(2);
+    GeometricObject o1 = new GeometricObject(5,0,10,10);
+    GeometricObject o2 = new GeometricObject(0,5,10,10);
 
+    System.out.println(o1.overlap(o2));
+    System.out.println(o1);
     System.out.println(v1);
     System.out.println(v1.length());
     System.out.println(v3);
