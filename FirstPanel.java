@@ -7,7 +7,6 @@ import javax.swing.JPanel;
 
     public void paintComponent(java.awt.Graphics g){
         g.fillRect(100, 35, 42, 42);
-        g.fillArc(10, 10, 150, 300, 100, 90);
     }
 
     public static void main(String[]args){
